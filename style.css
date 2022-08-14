@@ -1,0 +1,60 @@
+/* @font-face {
+    font-family: 'Outfit', sans-serif;
+} */
+
+body {
+    background-color: #3c3939;
+}
+.container {
+    width: 90%;
+    height: 200px;
+    font-family: 'Orbitron', sans-serif;
+    color: #7faac5;
+    margin:20px auto;
+    padding:25px;
+    text-align:center;
+    font-size: 40px;
+    background: #302f2f;
+    border: 2px solid #7faac5;
+    border-radius:30px;
+}
+.bottom, .middle {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.count, .timer {
+    width: 50%;
+}
+
+button{
+    font-size: 16px;
+    -webkit-appearance: none;
+    border:none;
+    background-color: #7faac5;
+    color:#302f2f;
+    width:70px;
+    height:35px;
+    justify-content: space-between;
+    transition:0.2s;
+    border-radius:40px;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 15px;
+}
+
+.stopwatch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px;
+}

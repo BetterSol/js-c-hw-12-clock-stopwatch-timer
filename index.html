@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 12 clock</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&family=Kantumruy+Pro:ital,wght@0,200;1,200&family=Outfit:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="upper container" id="clock">
+            <h5 class="dateBlock" id="date">
+            </h5>
+            <h1 class="hourBlock" id="time">
+            </h1>
+        </div>
+        <div class="middle container" id="speedometer">
+            <div class="speed count">
+                <div class="stopwatch">
+                    <span id="stopwatchTime">00:00:00:000</span>
+                </div>
+                <div class="speedBtns">
+                    <h4 id="speed"></h4>
+                    <button id="startSw" onclick="startStopwatch();">Start</button>
+                    <button id="loopSw" onclick="loopStopwatch();">Loop</button>
+                    <button id="stopSw" onclick="stopStopwatch();">Stop</button>
+                    <button id="resetSw" onclick="resetStopwatch();">Reset</button>
+                </div>
+                
+            </div>
+            <div class="loop count">
+                <div class="loopList">
+                    <span id="loopItem"></span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom container" id="timer">
+            <div class="choose timer">
+                <div class="timerSet">
+                    <h1 id="timerSet">00</h1>
+                </div>
+                <button id="minPlus" onclick="minutesPlus();">+</button>
+                <button id="minMinus" onclick="minutesMinus();">-</button>
+            </div>
+            <div class="countdown timer">
+                <div class="timerClock">
+                    <h1 id="timerTime">00:00</h1>
+                </div>
+                <div class="timerBtns">
+                    <button id="startTimer" onclick="startTimer();">Start</button>
+                    <button id="stopTimer" onclick="stopTimer();">Stop</button>
+                    <button id="resetTimer" onclick="resetTimer();">Reset</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
